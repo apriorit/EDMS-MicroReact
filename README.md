@@ -6,7 +6,7 @@ Run `npm run start` runs site http://localhost:5002
 
 ## Development server
 
-// Need TODO
+Run `watch:dev` to watch your changes in the microfrontends wrapper page
 
 ## Build
 

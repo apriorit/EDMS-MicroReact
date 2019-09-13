@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = {
   module: {
     rules: [
@@ -9,5 +11,12 @@ module.exports = {
         }
       }
     ]
+  },
+  devServer: {
+    inline: true,
+    port: 5002,
+    host: "localhost",
+    contentBase: path.join(__dirname, 'dist'),
+    watchContentBase: true
   }
 };

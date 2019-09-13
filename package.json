@@ -4,11 +4,14 @@
   "private": true,
   "dependencies": {
     "react-scripts": "3.0.0",
-    "serve": "^11.1.0"
+    "serve": "^11.1.0",
+    "webpack-dev-server": "^3.8.0"
   },
   "scripts": {
     "start": "npm run build && serve -l 5002 dist",
-    "build": "webpack --mode development"
+    "build": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "watch:dev": "npm run build && webpack-dev-server"
   },
   "eslintConfig": {
     "extends": "react-app"
